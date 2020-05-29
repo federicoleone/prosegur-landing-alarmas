@@ -10691,6 +10691,10 @@ header {
   }
 }
 
+.steps article img {
+  border-bottom: 6px #ffcd00 solid;
+}
+
 .features i {
   height: 47px;
   width: 80px;
