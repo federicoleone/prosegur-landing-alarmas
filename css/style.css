@@ -10479,6 +10479,7 @@ label {
   h1, .h1, .fh1 {
     font-size: 1.45rem;
     line-height: 2rem;
+    margin: 0;
   }
   h2, .h2, .fh2 {
     font-size: 1.4rem;
