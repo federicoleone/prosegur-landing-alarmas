@@ -8,9 +8,7 @@ $(function() {
             $('#mainTitle').appendTo('#wrapper-mainTitle-desktop');
         }
     }
-
-    $(window).on('load resize orientationchange',mainTitle);    
-    
+   
     /* Silder */
     var nextH;
     $('.productSlider').on('slide.bs.carousel', function (e) {
@@ -63,3 +61,5 @@ $(function() {
       $(window).on('load resize orientationchange',normalizeSlideHeights);
         
 });
+
+$(window).on('load resize orientationchange',mainTitle);  
