@@ -60,7 +60,7 @@ $(function() {
         })
       }
       
-      $(window).on(
-        'load resize orientationchange',
-        normalizeSlideHeights);
+      $(window).on('load resize orientationchange',normalizeSlideHeights);
+
+        AOS.init();
 });
