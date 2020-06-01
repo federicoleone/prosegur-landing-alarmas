@@ -1,4 +1,15 @@
 $(function() {
+
+    // H1 appendTo Mobile
+    function mainTitle(){
+        if($(window).width() < 767){
+            $('#mainTitle').appendTo('#wrapper-mainTitle-mobile');
+        } else {
+            $('#mainTitle').appendTo('#wrapper-mainTitle-desktop');
+        }
+    }
+
+    $(window).on('load resize orientationchange',mainTitle);    
     
     /* Silder */
     var nextH;
@@ -19,6 +30,7 @@ $(function() {
         }, 1000);
     });
 
+    // Footer
     $(".btn-see-more").click(function() {
         var text = $(this).text();
         $(this).text(text == "Ver más" ? "Ver menos" : "Ver más");
