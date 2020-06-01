@@ -10197,76 +10197,6 @@ a.text-dark:focus, a.text-dark:hover {
   border-radius: 6px;
 }
 
-* {
-  font-family: 'Poppins', sans-serif;
-}
-
-.font-weight-medium {
-  font-weight: 500;
-}
-
-.font-weight-semiBold {
-  font-weight: 600;
-}
-
-h1, .h1, .fh1 {
-  font-size: 1.75rem;
-  line-height: 2.2rem;
-}
-
-h2, .h2, .fh2 {
-  font-size: 1.75rem;
-}
-
-h3, .h3, .fh3 {
-  font-size: 1.4rem;
-}
-
-h4, .h4, .fh4 {
-  font-size: 1.3rem;
-}
-
-h5, .h5, .fh5 {
-  font-size: 1.18rem;
-}
-
-h6, .h6, .fh6 {
-  font-size: 1rem;
-}
-
-span {
-  font-size: 1rem;
-}
-
-p {
-  font-size: 0.9rem;
-}
-
-label {
-  font-size: 0.75rem;
-}
-
-@media (max-width: 1999px) {
-  h1, .h1, .fh1 {
-    font-size: 1.6rem;
-    line-height: 2rem;
-  }
-}
-
-@media (max-width: 767px) {
-  h2, .h2, .fh2 {
-    font-size: 1.4rem;
-    line-height: 2rem;
-  }
-  h5, .h5, .fh5 {
-    font-size: 1.08rem;
-    line-height: 1.6rem;
-  }
-  p {
-    font-size: 0.9rem;
-  }
-}
-
 /* Variables */
 /* Text Color */
 .text-white {
@@ -10358,6 +10288,12 @@ label {
   color: #161616;
 }
 
+@media (max-width: 767px) {
+  .text-black-gray-sm {
+    color: #242424 !important;
+  }
+}
+
 /* Background Color */
 .bg-none {
   background: none;
@@ -10405,6 +10341,12 @@ label {
 
 .bg-almost-black {
   background-color: #161616;
+}
+
+@media (max-width: 767px) {
+  .bg-light-gray-sm {
+    background-color: #f3f3f3 !important;
+  }
 }
 
 /* Background Hover Color */
@@ -10475,6 +10417,80 @@ label {
 .shadow-orange-hover:hover {
   -webkit-box-shadow: 0 0 0 0.25rem rgba(243, 129, 110, 0.6);
           box-shadow: 0 0 0 0.25rem rgba(243, 129, 110, 0.6);
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.font-weight-medium {
+  font-weight: 500;
+}
+
+.font-weight-semiBold {
+  font-weight: 600;
+}
+
+h1, .h1, .fh1 {
+  font-size: 1.75rem;
+  line-height: 2.2rem;
+}
+
+h2, .h2, .fh2 {
+  font-size: 1.75rem;
+}
+
+h3, .h3, .fh3 {
+  font-size: 1.4rem;
+}
+
+h4, .h4, .fh4 {
+  font-size: 1.3rem;
+}
+
+h5, .h5, .fh5 {
+  font-size: 1.18rem;
+}
+
+h6, .h6, .fh6 {
+  font-size: 1rem;
+}
+
+span {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 0.9rem;
+}
+
+label {
+  font-size: 0.75rem;
+}
+
+@media (max-width: 1999px) {
+  h1, .h1, .fh1 {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  h1, .h1, .fh1 {
+    font-size: 1.45rem;
+    line-height: 2rem;
+  }
+  h2, .h2, .fh2 {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+  h5, .h5, .fh5 {
+    font-size: 1.08rem;
+    line-height: 1.6rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
 }
 
 .btn {
@@ -10606,18 +10622,31 @@ header {
   animation-name: fadeInUp;
 }
 
-.heroSlider h2, .heroSlider .h2, .heroSlider .fh2 {
+@media (max-width: 767px) {
+  .banner-hero {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.heroSlider h2,
+.heroSlider .h2,
+.heroSlider .fh2 {
   font-size: 1.6rem;
 }
 
 @media (max-width: 1999px) {
-  .heroSlider h2, .heroSlider .h2, .heroSlider .fh2 {
+  .heroSlider h2,
+  .heroSlider .h2,
+  .heroSlider .fh2 {
     font-size: 1.5rem;
   }
 }
 
 @media (max-width: 767px) {
-  .heroSlider h2, .heroSlider .h2, .heroSlider .fh2 {
+  .heroSlider h2,
+  .heroSlider .h2,
+  .heroSlider .fh2 {
     font-size: 1.4rem;
     line-height: 1.9rem;
     margin-bottom: .5rem;
@@ -10643,8 +10672,7 @@ header {
 
 @media (max-width: 575px) {
   .heroSlider .card {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+    border-radius: 0;
   }
 }
 
