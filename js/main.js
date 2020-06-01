@@ -61,6 +61,5 @@ $(function() {
       }
       
       $(window).on('load resize orientationchange',normalizeSlideHeights);
-
-        AOS.init();
+        
 });
