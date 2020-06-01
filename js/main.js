@@ -8,6 +8,9 @@ $(function() {
             $('#mainTitle').appendTo('#wrapper-mainTitle-desktop');
         }
     }
+
+    mainTitle();
+    $(window).on('resize orientationchange',mainTitle);
    
     /* Silder */
     var nextH;
@@ -58,8 +61,8 @@ $(function() {
         })
       }
       
-      $(window).on('load resize orientationchange',normalizeSlideHeights);
+      normalizeSlideHeights();
+      $(window).on('resize orientationchange',normalizeSlideHeights);
         
 });
 
-$(window).on('load resize orientationchange',mainTitle);  
