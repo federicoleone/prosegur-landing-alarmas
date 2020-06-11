@@ -10898,12 +10898,12 @@ footer .btn.btn-see-more {
 }
 
 .navAside i.te_llamamos {
-  background-position: -423px -9px;
+  background-position: -465px -9px;
+  width: 29px;
 }
 
 .navAside i.tienda_prosegur {
-  background-position: -465px -9px;
-  width: 29px;
+  background-position: -423px -9px;
 }
 
 @media (max-width: 768px) {
