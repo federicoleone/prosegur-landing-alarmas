@@ -10728,37 +10728,37 @@ header {
   height: 47px;
   width: 80px;
   display: inline-block;
-  background: url(../img/icons_features.svg) no-repeat left bottom;
-  background-size: 404px;
+  background: url(../img/icons_features.svg) no-repeat left -2px;
+  background-size: 508px;
 }
 
 .features i.respuesta {
-  background-position: 0;
+  background-position: 0 -2px;
   width: 48px;
 }
 
 .features i.codigo {
-  background-position: -67px;
+  background-position: -66px -1px;
   width: 82px;
 }
 
 .features i.acudas {
-  background-position: -163px;
+  background-position: -162px -2px;
   width: 52px;
 }
 
 .features i.smart_app {
-  background-position: -239px;
+  background-position: -237px -2px;
   width: 30px;
 }
 
 .features i.tecnico {
-  background-position: -291px;
+  background-position: -288px -2px;
   width: 48px;
 }
 
 .features i.antisabotaje {
-  background-position: -355px;
+  background-position: -354px -2px;
   width: 52px;
 }
 
@@ -10810,5 +10810,114 @@ header {
 
 footer .btn.btn-see-more {
   border-radius: 10px 10px 0 0;
+}
+
+.navAside {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  z-index: 20;
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .navAside {
+    width: 100%;
+    height: auto;
+    right: auto;
+    bottom: 0;
+    background-color: #fff;
+    border-top: 1px #dedede solid;
+  }
+}
+
+.navAside a {
+  position: relative;
+  right: 0;
+  display: inline-block;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.navAside a:hover {
+  right: 5px;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .navAside a {
+    -webkit-transition: none;
+    transition: none;
+    margin: 8px 0;
+  }
+  .navAside a:hover {
+    right: 0;
+  }
+}
+
+.navAside .btn {
+  border-radius: 6px;
+  width: 80px;
+  height: 80px;
+  padding: 0;
+}
+
+.navAside .btn:first-child {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .navAside .btn {
+    border-radius: 0;
+    width: auto;
+    height: auto;
+    background: none;
+    padding: 0 10px;
+    margin: 0 !important;
+  }
+}
+
+.navAside h4 {
+  font-size: 0.7rem;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .navAside h4 {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.navAside i {
+  height: 30px;
+  width: 32px;
+  display: inline-block;
+  background: url(../img/icons_features.svg) no-repeat left bottom;
+  background-size: 508px;
+}
+
+.navAside i.te_llamamos {
+  background-position: -423px -9px;
+}
+
+.navAside i.tienda_prosegur {
+  background-position: -465px -9px;
+  width: 29px;
+}
+
+@media (max-width: 768px) {
+  .navAside i {
+    vertical-align: middle;
+  }
+}
+
+@media (max-width: 768px) {
+  .navAside li {
+    display: inline-block;
+  }
+  .navAside li:first-child button {
+    border-right: 1px #000 solid;
+  }
 }
 /*# sourceMappingURL=style.css.map */
